@@ -21,8 +21,8 @@ app.use(morgan('combined'));
 
 // Template engine
 app.engine('hbs', handlebars({ extname: '.hbs' }));
-        app.set('view engine', 'hbs');
-    app.set('views', path.join(__dirname, '/resources/views'));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, '/resources/views'));
 
 // Route init
 route(app);
