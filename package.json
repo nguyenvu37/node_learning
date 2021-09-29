@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/nguyenvu37/node_learning#readme",
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write"
+    "src/**/*.{js,json,scss}": ["prettier --single-quote --trailing-comma all --tab-width 2 --write", "git add"]
   },
   "husky": {
     "hooks": {

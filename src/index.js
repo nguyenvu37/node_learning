@@ -17,12 +17,12 @@ app.use(
 app.use(express.json());
 
 // Http logger
-    app.use(morgan('combined'));
+app.use(morgan('combined'));
 
 // Template engine
-      app.engine('hbs', handlebars({ extname: '.hbs' }));
-        app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, '/resources/views'));
+app.engine('hbs', handlebars({ extname: '.hbs' }));
+  app.set('view engine', 'hbs');
+ app.set('views', path.join(__dirname, '/resources/views'));
 
 // Route init
 route(app);
