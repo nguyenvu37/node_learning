@@ -27,7 +27,7 @@
   "homepage": "https://github.com/nguyenvu37/node_learning#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run beautiful"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -36,7 +36,6 @@
       "git add"
     ]
   },
-
   "dependencies": {
     "express": "^4.17.1"
   },
